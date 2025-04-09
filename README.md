@@ -1,2 +1,2 @@
 # goit-markup-hw-06
-homework_6
+homework-6
