@@ -51,6 +51,10 @@ button {
   cursor: pointer;
 }
 
+.section {
+  padding: 96px 0;
+}
+
 /*---------------------------common--------------------------*/
 .container {
   max-width: 320px;
@@ -266,10 +270,13 @@ button {
   color: #404bbf;
 }
 
-.menu-address {
+.menu-address-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+.menu-address {
   margin-bottom: 48px;
 }
 
@@ -311,7 +318,9 @@ button {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 0 auto 94px;
+  margin: 0 auto;
+  padding-top: 72px;
+  padding-bottom: 72px;
 }
 
 @media screen and (min-resolution: 2x) {
@@ -425,8 +434,8 @@ button {
 /*------------------------feature------------------------*/
 .feature {
   background-color: #ffffff;
-  margin-bottom: 96px;
 }
+
 .feature-icon-container {
   display: none;
 }
@@ -605,17 +614,12 @@ button {
     max-width: 584px;
   }
 
-  .team-title {
-    padding-top: 96px;
-  }
-
   .team-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 64px 24px;
     width: 100%;
-    padding-bottom: 96px;
   }
   .team-list-layer {
     width: calc((100% - 24px) / 2);
@@ -771,6 +775,10 @@ button {
   margin-bottom: 72px;
 }
 
+.footer-container-part-two {
+  margin-bottom: 72px;
+}
+
 .logo-footer {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -817,7 +825,6 @@ button {
   gap: 16px;
   align-items: center;
   justify-content: center;
-  margin-bottom: 72px;
 }
 
 .footer-social-link-point {
@@ -876,6 +883,10 @@ button {
   margin-left: 16px;
 }
 
+.footer-label-container {
+  margin-bottom: 16px;
+}
+
 .subscribe-input {
   border: 1px solid #fff;
   border-radius: 4px;
@@ -889,7 +900,6 @@ button {
   border-image: initial;
   padding-left: 16px;
   color: #ffffff;
-  margin-bottom: 16px;
 }
 
 .subscribe-input::placeholder {
@@ -902,6 +912,8 @@ button {
 
 @media screen and (min-width: 768px) {
   .footer-container {
+    padding-left: 108px;
+    padding-right: 108px;
     display: flex;
     flex-wrap: wrap;
     gap: 72px 24px;
@@ -912,7 +924,15 @@ button {
   }
 
   .footer-container-part-one {
-    margin-bottom: 0px;
+    margin-bottom: 0;
+  }
+
+  .footer-container-part-two {
+    margin-bottom: 0;
+  }
+
+  .footer-label-container {
+    margin-bottom: 0;
   }
 
   .subscribe-input {
@@ -956,15 +976,21 @@ button {
     flex-wrap: nowrap;
     align-items: baseline;
     gap: 0;
-    /* margin-left: 0; */
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .footer-container-part-one {
     margin-right: 120px;
   }
 
-  .form-container {
-    margin-left: 80px;
+  .footer-container-part-two {
+    margin-right: 80px;
+  }
+
+  .footer-form {
+    display: flex;
+    gap: 24px;
   }
 }
 

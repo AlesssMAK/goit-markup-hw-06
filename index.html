@@ -142,8 +142,8 @@
               </li>
             </ul>
           </nav>
-          <address>
-            <ul class="menu-address">
+          <address class="menu-address">
+            <ul class="menu-address-list">
               <li>
                 <a
                   class="menu-address-link menu-address-link-current"
@@ -945,18 +945,20 @@
         <div class="form-container">
           <p class="subscribe-text">Subscribe</p>
           <form class="footer-form">
-            <label
-              aria-label="footer-email"
-              class="subscribe-lable"
-            >
-              <input
-                type="email"
-                class="subscribe-input"
-                name="user-subscribe"
-                id="user-subscribe"
-                placeholder="E-mail"
-              />
-            </label>
+            <div class="footer-label-container">
+              <label
+                aria-label="footer-email"
+                class="subscribe-lable"
+              >
+                <input
+                  type="email"
+                  class="subscribe-input"
+                  name="user-subscribe"
+                  id="user-subscribe"
+                  placeholder="E-mail"
+                />
+              </label>
+            </div>
             <button
               class="subscribe-btm"
               type="submit"
