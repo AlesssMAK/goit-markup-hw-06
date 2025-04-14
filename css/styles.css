@@ -477,10 +477,10 @@ button {
   .feature-list-layer {
     width: calc((100% - 24px) / 2);
   }
-}
 
-.feature-title {
-  text-align: start;
+  .feature-title {
+    text-align: start;
+  }
 }
 
 @media screen and (min-width: 1158px) {
